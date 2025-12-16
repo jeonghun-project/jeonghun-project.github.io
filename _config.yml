@@ -1,0 +1,19 @@
+title: "Crypto & Tech Insights"
+email: contact@example.com
+description: >-
+  Premium insights on Cryptocurrency, Economy, and Technology.
+baseurl: ""
+url: ""
+
+# SEO & Permalinks (✅ 키워드 URL)
+permalink: /:year/:month/:day/:title/
+
+# Build settings
+theme: null # We are using custom layouts now
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+sass:
+  style: compressed

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<article class="post-container" style="max-width: 800px; margin: 6rem auto; padding: 0 2rem;">
+
+    <!-- Header -->
+    <header style="text-align: center; margin-bottom: 4rem;">
+        <div class="card-tag" style="margin-bottom: 1.5rem;">{{ page.tags[0] | default: "Article" }}</div>
+        <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; line-height: 1.2; margin-bottom: 2rem;">
+            {{ page.title }}
+        </h1>
+        <p style="color: var(--text-secondary);">
+            Published on {{ page.date | date: "%B %d, %Y" }} • By {{ page.author | default: site.title }}
+        </p>
+    </header>
+
+    <!-- Featured Image (3D Tilt) -->
+    {% if page.featured_image %}
+    <div class="media-container">
+        <img src="{{ page.featured_image }}" alt="{{ page.title }}" class="tilt-image">
+    </div>
+    {% endif %}
+
+    <!-- Body -->
+    <div class="post-content" style="font-size: 1.125rem; color: #d1d5db;">
+        {{ content }}
+    </div>
+
+    <!-- Footer / Share -->
+    <hr style="border-color: var(--glass-border); margin: 4rem 0;">
+
+    <div class="post-footer" style="text-align: center;">
+        <h3>Enjoyed this read?</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;">Subscribe to get the latest insights directly to
+            your inbox.</p>
+        <a href="#" class="cta-button">Subscribe Now</a>
+    </div>
+
+</article>

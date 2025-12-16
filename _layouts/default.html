@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+
+    <!-- SEO -->
+    {% seo %}
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ " /assets/css/style.css" | relative_url }}">
+
+    <!-- AdSense -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/..." crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+    <!-- ✅ 스크롤 시 Backdrop Blur Header -->
+    <header class="sticky-header">
+        <div class="logo">{{ site.title }}</div>
+        <nav>
+            <a href="{{ " /" | relative_url }}" class="nav-link"
+                style="color:#fff; margin-right:1rem; text-decoration:none;">Home</a>
+            <a href="#" class="cta-button">Subscribe</a>
+        </nav>
+    </header>
+
+    <!-- Content Wrapper -->
+    <main>
+        {{ content }}
+    </main>
+
+    <!-- ✅ 드라마틱한 최종 CTA Footer -->
+    <footer class="footer-cta">
+        <h2 class="massive-title" style="font-size: 3rem;">Ready to Dive Deep?</h2>
+        <p style="color: #9ca3af; margin-bottom: 2rem;">최신 크립토 인사이트를 놓치지 마세요.</p>
+
+        <div class="social-links">
+            <!-- Add Social Icons Here -->
+        </div>
+
+        <p><small>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</small></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ " /assets/js/main.js" | relative_url }}"></script>
+</body>
+
+</html>
