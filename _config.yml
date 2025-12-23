@@ -17,3 +17,29 @@ plugins:
 
 sass:
   style: compressed
+
+# ✅ Sub-Blogs Configuration (Portal Data)
+sub_blogs:
+  - title: "General Blog"
+    path: "/general-blog"
+    description: "Diverse insights covering various topics including politics and general news."
+    tag: "KR / Mixed"
+    color: "#a855f7" # Purple
+
+  - title: "Crypto News"
+    path: "/crypto-news"
+    description: "Fastest updates on Cryptocurrency markets, trends, and blockchain technology."
+    tag: "Crypto / Web3"
+    color: "#f59e0b" # Amber
+
+  - title: "Economy Insights"
+    path: "/economy-insights"
+    description: "Deep dive into global economic shifts, finance, and market strategies."
+    tag: "Economy / Macro"
+    color: "#10b981" # Emerald
+
+  - title: "Global Tech"
+    path: "/global-tech-blog"
+    description: "English content focusing on Global Tech trends and AI developments."
+    tag: "Global / EN"
+    color: "#3b82f6" # Blue
