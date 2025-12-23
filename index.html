@@ -17,35 +17,22 @@ layout: default
     <div class="portal-grid"
         style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; width: 100%; max-width: 900px;">
 
-        <!-- General Blog Card -->
-        <a href="/general-blog" class="post-card portal-card"
+        {% for blog in site.sub_blogs %}
+        <a href="{{ blog.path }}" class="post-card portal-card"
             style="text-decoration: none; min-height: 300px; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.3s ease;">
             <div>
-                <span class="card-tag">KR / Mixed</span>
-                <h2 style="font-size: 2rem; margin: 1rem 0; color: #fff;">General Blog</h2>
+                <span class="card-tag" style="border-color: {{ blog.color }}; color: {{ blog.color }};">{{ blog.tag
+                    }}</span>
+                <h2 style="font-size: 2rem; margin: 1rem 0; color: #fff;">{{ blog.title }}</h2>
                 <p style="color: var(--text-secondary);">
-                    크립토, 경제, 정치 등 다양한 주제의 심층 분석과 인사이트.
+                    {{ blog.description }}
                 </p>
             </div>
-            <div style="margin-top: 2rem; color: #a855f7; font-weight: 600;">
+            <div style="margin-top: 2rem; color: {{ blog.color }}; font-weight: 600;">
                 Enter Space ->
             </div>
         </a>
-
-        <!-- Global Tech Blog Card -->
-        <a href="/global-tech-blog" class="post-card portal-card"
-            style="text-decoration: none; min-height: 300px; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.3s ease;">
-            <div>
-                <span class="card-tag" style="border-color: #3b82f6; color: #3b82f6;">Global / EN</span>
-                <h2 style="font-size: 2rem; margin: 1rem 0; color: #fff;">Global Tech</h2>
-                <p style="color: var(--text-secondary);">
-                    English content focusing on Global Tech trends and AI developments.
-                </p>
-            </div>
-            <div style="margin-top: 2rem; color: #3b82f6; font-weight: 600;">
-                Enter Space ->
-            </div>
-        </a>
+        {% endfor %}
 
     </div>
 </section>
