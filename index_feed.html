@@ -4,29 +4,30 @@ layout: default
 
 <!-- ✅ Hero Section with Massive Typography -->
 <section class="hero-section">
-    <span class="card-tag stagger-1">Daily Insights</span>
+    <span class="card-tag stagger-1">{{ site.hero_subtitle | default: "Daily Insights" }}</span>
     <h1 class="massive-title stagger-2">
-        Unlocking the <br />
-        <span style="color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.5);">Future of</span> Value
+        {{ site.hero_title_line1 | default: "Unlocking the" }} <br />
+        <span style="color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,0.5);">{{ site.hero_title_line2 |
+            default: "Future of" }}</span> {{ site.hero_title_line3 | default: "Value" }}
     </h1>
     <p class="stagger-3" style="max-width: 600px; margin: 0 auto; color: var(--text-secondary); font-size: 1.2rem;">
-        가장 빠르고 정확한 크립토 & 경제 인사이트를 제공합니다.
+        {{ site.hero_description | default: "가장 빠르고 정확한 크립토 & 경제 인사이트를 제공합니다." }}
     </p>
 </section>
 
 <!-- ✅ 애니메이션된 소셜 프루프 -->
 <section class="social-proof">
     <div class="stat-item">
-        <h3 class="stat-number-static">Deep Analysis</h3>
-        <p>Market Trends</p>
+        <h3 class="stat-number-static">{{ site.stat_1_title | default: "Deep Analysis" }}</h3>
+        <p>{{ site.stat_1_desc | default: "Market Trends" }}</p>
     </div>
     <div class="stat-item">
-        <h3 class="stat-number-static">Data Driven</h3>
-        <p>Actionable Insights</p>
+        <h3 class="stat-number-static">{{ site.stat_2_title | default: "Data Driven" }}</h3>
+        <p>{{ site.stat_2_desc | default: "Actionable Insights" }}</p>
     </div>
     <div class="stat-item">
-        <h3 class="stat-number-static">Global View</h3>
-        <p>Economic Shift</p>
+        <h3 class="stat-number-static">{{ site.stat_3_title | default: "Global View" }}</h3>
+        <p>{{ site.stat_3_desc | default: "Economic Shift" }}</p>
     </div>
 </section>
 

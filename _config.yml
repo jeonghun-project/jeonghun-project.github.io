@@ -5,6 +5,20 @@ description: >-
 baseurl: ""
 url: "https://toreta.uk"
 
+# ✅ Localization (Hero & Stats)
+hero_subtitle: "Daily Insights"
+hero_title_line1: "Unlocking the"
+hero_title_line2: "Future of"
+hero_title_line3: "Value"
+hero_description: "가장 빠르고 정확한 크립토 & 경제 인사이트를 제공합니다."
+
+stat_1_title: "Deep Analysis"
+stat_1_desc: "Market Trends"
+stat_2_title: "Data Driven"
+stat_2_desc: "Actionable Insights"
+stat_3_title: "Global View"
+stat_3_desc: "Economic Shift"
+
 # SEO & Permalinks (✅ 키워드 URL)
 permalink: /:year/:month/:day/:title/
 
