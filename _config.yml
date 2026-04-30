@@ -57,3 +57,8 @@ sub_blogs:
     description: "English content focusing on Global Tech trends and AI developments."
     tag: "Global / EN"
     color: "#3b82f6" # Blue
+  - title: "Health & Wellness"
+    path: "/health-blog"
+    description: "Evidence-based health insights backed by peer-reviewed research."
+    tag: "Health / Science"
+    color: "#ef4444"
