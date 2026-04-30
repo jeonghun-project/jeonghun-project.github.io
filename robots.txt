@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://toreta.uk/sitemap.xml
+Sitemap: https://toreta.uk/health-blog/sitemap.xml
