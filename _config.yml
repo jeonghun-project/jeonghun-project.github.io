@@ -62,3 +62,15 @@ sub_blogs:
     description: "Evidence-based health insights backed by peer-reviewed research."
     tag: "Health / Science"
     color: "#ef4444"
+  - title: "Health EN"
+    path: "/health-en"
+    description: "English health & wellness content. Evidence-based, globally sourced."
+    tag: "Health / EN"
+    color: "#f97316"
+
+  - title: "Economy EN"
+    path: "/economy-en"
+    description: "English economy & market analysis. Data-driven investment insights."
+    tag: "Economy / EN"
+    color: "#06b6d4"
+
